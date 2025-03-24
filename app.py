@@ -4,7 +4,7 @@ from transformers import pipeline
 app = FastAPI()
 
 # Load your fine-tuned model
-model = pipeline("text-generation", model="./my_health_gpt2_model")
+model = pipeline("text-generation", model="./my_health_guru_model")
 
 @app.get("/")
 async def root():
